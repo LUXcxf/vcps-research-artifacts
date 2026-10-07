@@ -1,0 +1,1077 @@
+{
+  "schema_version": "stateact-source-aligned-demonstrations-v1",
+  "source_manifest": "data/manifests/train240.jsonl",
+  "source_next_action": "data/scales/d120_actor_train.jsonl",
+  "selection": "first complete D120 train episodes in frozen manifest order",
+  "examples_per_family": 2,
+  "demonstrations": {
+    "pick_two_obj_and_place": [
+      {
+        "episode_id": "alfworld/walkthrough/0025e54976bf",
+        "split": "train",
+        "instruction": "find two tissuebox and put them in coffeetable.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to diningtable 1"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "diningtable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take tissuebox 4 from diningtable 1"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 1",
+              "current_inventory": "tissuebox 4",
+              "locations_visited": [
+                "diningtable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to coffeetable 1"
+          },
+          {
+            "state": {
+              "current_location": "coffeetable 1",
+              "current_inventory": "tissuebox 4",
+              "locations_visited": [
+                "diningtable 1",
+                "coffeetable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move tissuebox 4 to coffeetable 1"
+          },
+          {
+            "state": {
+              "current_location": "coffeetable 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "diningtable 1",
+                "coffeetable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [
+                "tissuebox 4 -> coffeetable 1"
+              ],
+              "used_devices": []
+            },
+            "action": "go to diningtable 1"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "diningtable 1",
+                "coffeetable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [
+                "tissuebox 4 -> coffeetable 1"
+              ],
+              "used_devices": []
+            },
+            "action": "take tissuebox 3 from diningtable 1"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 1",
+              "current_inventory": "tissuebox 3",
+              "locations_visited": [
+                "diningtable 1",
+                "coffeetable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [
+                "tissuebox 4 -> coffeetable 1"
+              ],
+              "used_devices": []
+            },
+            "action": "go to coffeetable 1"
+          },
+          {
+            "state": {
+              "current_location": "coffeetable 1",
+              "current_inventory": "tissuebox 3",
+              "locations_visited": [
+                "diningtable 1",
+                "coffeetable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [
+                "tissuebox 4 -> coffeetable 1"
+              ],
+              "used_devices": []
+            },
+            "action": "move tissuebox 3 to coffeetable 1"
+          }
+        ]
+      },
+      {
+        "episode_id": "alfworld/walkthrough/2ca41b680056",
+        "split": "train",
+        "instruction": "find two candle and put them in cabinet.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to countertop 1"
+          },
+          {
+            "state": {
+              "current_location": "countertop 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "countertop 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take candle 1 from countertop 1"
+          },
+          {
+            "state": {
+              "current_location": "countertop 1",
+              "current_inventory": "candle 1",
+              "locations_visited": [
+                "countertop 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to cabinet 1"
+          },
+          {
+            "state": {
+              "current_location": "cabinet 1",
+              "current_inventory": "candle 1",
+              "locations_visited": [
+                "countertop 1",
+                "cabinet 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move candle 1 to cabinet 1"
+          },
+          {
+            "state": {
+              "current_location": "cabinet 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "countertop 1",
+                "cabinet 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [
+                "candle 1 -> cabinet 1"
+              ],
+              "used_devices": []
+            },
+            "action": "go to toilet 1"
+          },
+          {
+            "state": {
+              "current_location": "toilet 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "countertop 1",
+                "cabinet 1",
+                "toilet 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [
+                "candle 1 -> cabinet 1"
+              ],
+              "used_devices": []
+            },
+            "action": "take candle 2 from toilet 1"
+          },
+          {
+            "state": {
+              "current_location": "toilet 1",
+              "current_inventory": "candle 2",
+              "locations_visited": [
+                "countertop 1",
+                "cabinet 1",
+                "toilet 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [
+                "candle 1 -> cabinet 1"
+              ],
+              "used_devices": []
+            },
+            "action": "go to cabinet 1"
+          },
+          {
+            "state": {
+              "current_location": "cabinet 1",
+              "current_inventory": "candle 2",
+              "locations_visited": [
+                "countertop 1",
+                "cabinet 1",
+                "toilet 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [
+                "candle 1 -> cabinet 1"
+              ],
+              "used_devices": []
+            },
+            "action": "move candle 2 to cabinet 1"
+          }
+        ]
+      }
+    ],
+    "pick_cool_then_place_in_recep": [
+      {
+        "episode_id": "alfworld/walkthrough/03b3de78cf0e",
+        "split": "train",
+        "instruction": "cool some lettuce and put it in garbagecan.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to diningtable 2"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 2",
+              "current_inventory": "none",
+              "locations_visited": [
+                "diningtable 2"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take lettuce 3 from diningtable 2"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 2",
+              "current_inventory": "lettuce 3",
+              "locations_visited": [
+                "diningtable 2"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "lettuce 3",
+              "locations_visited": [
+                "diningtable 2",
+                "fridge 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "cool lettuce 3 with fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "lettuce 3",
+              "locations_visited": [
+                "diningtable 2",
+                "fridge 1"
+              ],
+              "completed_treatments": [
+                "cool lettuce 3"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to garbagecan 1"
+          },
+          {
+            "state": {
+              "current_location": "garbagecan 1",
+              "current_inventory": "lettuce 3",
+              "locations_visited": [
+                "diningtable 2",
+                "fridge 1",
+                "garbagecan 1"
+              ],
+              "completed_treatments": [
+                "cool lettuce 3"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move lettuce 3 to garbagecan 1"
+          }
+        ]
+      },
+      {
+        "episode_id": "alfworld/walkthrough/3b8a71ca4404",
+        "split": "train",
+        "instruction": "put a cool pot in countertop.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to stoveburner 1"
+          },
+          {
+            "state": {
+              "current_location": "stoveburner 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "stoveburner 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take pot 1 from stoveburner 1"
+          },
+          {
+            "state": {
+              "current_location": "stoveburner 1",
+              "current_inventory": "pot 1",
+              "locations_visited": [
+                "stoveburner 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "pot 1",
+              "locations_visited": [
+                "stoveburner 1",
+                "fridge 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "cool pot 1 with fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "pot 1",
+              "locations_visited": [
+                "stoveburner 1",
+                "fridge 1"
+              ],
+              "completed_treatments": [
+                "cool pot 1"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to countertop 3"
+          },
+          {
+            "state": {
+              "current_location": "countertop 3",
+              "current_inventory": "pot 1",
+              "locations_visited": [
+                "stoveburner 1",
+                "fridge 1",
+                "countertop 3"
+              ],
+              "completed_treatments": [
+                "cool pot 1"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move pot 1 to countertop 3"
+          }
+        ]
+      }
+    ],
+    "pick_clean_then_place_in_recep": [
+      {
+        "episode_id": "alfworld/walkthrough/0c24a58e269e",
+        "split": "train",
+        "instruction": "clean some butterknife and put it in diningtable.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to diningtable 1"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "diningtable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take butterknife 2 from diningtable 1"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 1",
+              "current_inventory": "butterknife 2",
+              "locations_visited": [
+                "diningtable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to sinkbasin 1"
+          },
+          {
+            "state": {
+              "current_location": "sinkbasin 1",
+              "current_inventory": "butterknife 2",
+              "locations_visited": [
+                "diningtable 1",
+                "sinkbasin 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "clean butterknife 2 with sinkbasin 1"
+          },
+          {
+            "state": {
+              "current_location": "sinkbasin 1",
+              "current_inventory": "butterknife 2",
+              "locations_visited": [
+                "diningtable 1",
+                "sinkbasin 1"
+              ],
+              "completed_treatments": [
+                "clean butterknife 2"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to diningtable 1"
+          },
+          {
+            "state": {
+              "current_location": "diningtable 1",
+              "current_inventory": "butterknife 2",
+              "locations_visited": [
+                "diningtable 1",
+                "sinkbasin 1"
+              ],
+              "completed_treatments": [
+                "clean butterknife 2"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move butterknife 2 to diningtable 1"
+          }
+        ]
+      },
+      {
+        "episode_id": "alfworld/walkthrough/2900d5c3414c",
+        "split": "train",
+        "instruction": "put a clean soapbar in cabinet.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to countertop 1"
+          },
+          {
+            "state": {
+              "current_location": "countertop 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "countertop 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take soapbar 3 from countertop 1"
+          },
+          {
+            "state": {
+              "current_location": "countertop 1",
+              "current_inventory": "soapbar 3",
+              "locations_visited": [
+                "countertop 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to sinkbasin 2"
+          },
+          {
+            "state": {
+              "current_location": "sinkbasin 2",
+              "current_inventory": "soapbar 3",
+              "locations_visited": [
+                "countertop 1",
+                "sinkbasin 2"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "clean soapbar 3 with sinkbasin 2"
+          },
+          {
+            "state": {
+              "current_location": "sinkbasin 2",
+              "current_inventory": "soapbar 3",
+              "locations_visited": [
+                "countertop 1",
+                "sinkbasin 2"
+              ],
+              "completed_treatments": [
+                "clean soapbar 3"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to cabinet 4"
+          },
+          {
+            "state": {
+              "current_location": "cabinet 4",
+              "current_inventory": "soapbar 3",
+              "locations_visited": [
+                "countertop 1",
+                "sinkbasin 2",
+                "cabinet 4"
+              ],
+              "completed_treatments": [
+                "clean soapbar 3"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "open cabinet 4"
+          },
+          {
+            "state": {
+              "current_location": "cabinet 4",
+              "current_inventory": "soapbar 3",
+              "locations_visited": [
+                "countertop 1",
+                "sinkbasin 2",
+                "cabinet 4"
+              ],
+              "completed_treatments": [
+                "clean soapbar 3"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move soapbar 3 to cabinet 4"
+          }
+        ]
+      }
+    ],
+    "look_at_obj_in_light": [
+      {
+        "episode_id": "alfworld/walkthrough/1a3507e638e9",
+        "split": "train",
+        "instruction": "examine the cellphone with the desklamp.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to desk 1"
+          },
+          {
+            "state": {
+              "current_location": "desk 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "desk 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "use desklamp 1"
+          },
+          {
+            "state": {
+              "current_location": "desk 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "desk 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": [
+                "desklamp 1"
+              ]
+            },
+            "action": "take cellphone 4 from desk 1"
+          }
+        ]
+      },
+      {
+        "episode_id": "alfworld/walkthrough/217db1d27943",
+        "split": "train",
+        "instruction": "examine the bowl with the desklamp.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to desk 1"
+          },
+          {
+            "state": {
+              "current_location": "desk 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "desk 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take bowl 2 from desk 1"
+          },
+          {
+            "state": {
+              "current_location": "desk 1",
+              "current_inventory": "bowl 2",
+              "locations_visited": [
+                "desk 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to sidetable 1"
+          },
+          {
+            "state": {
+              "current_location": "sidetable 1",
+              "current_inventory": "bowl 2",
+              "locations_visited": [
+                "desk 1",
+                "sidetable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "use desklamp 1"
+          }
+        ]
+      }
+    ],
+    "pick_heat_then_place_in_recep": [
+      {
+        "episode_id": "alfworld/walkthrough/1bf29ea6bda3",
+        "split": "train",
+        "instruction": "heat some mug and put it in shelf.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "fridge 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "open fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "fridge 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take mug 1 from fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "mug 1",
+              "locations_visited": [
+                "fridge 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to microwave 1"
+          },
+          {
+            "state": {
+              "current_location": "microwave 1",
+              "current_inventory": "mug 1",
+              "locations_visited": [
+                "fridge 1",
+                "microwave 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "heat mug 1 with microwave 1"
+          },
+          {
+            "state": {
+              "current_location": "microwave 1",
+              "current_inventory": "mug 1",
+              "locations_visited": [
+                "fridge 1",
+                "microwave 1"
+              ],
+              "completed_treatments": [
+                "heat mug 1"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to shelf 2"
+          },
+          {
+            "state": {
+              "current_location": "shelf 2",
+              "current_inventory": "mug 1",
+              "locations_visited": [
+                "fridge 1",
+                "microwave 1",
+                "shelf 2"
+              ],
+              "completed_treatments": [
+                "heat mug 1"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move mug 1 to shelf 2"
+          }
+        ]
+      },
+      {
+        "episode_id": "alfworld/walkthrough/1e12e817d706",
+        "split": "train",
+        "instruction": "heat some plate and put it in countertop.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "fridge 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "open fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "fridge 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take plate 1 from fridge 1"
+          },
+          {
+            "state": {
+              "current_location": "fridge 1",
+              "current_inventory": "plate 1",
+              "locations_visited": [
+                "fridge 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to microwave 1"
+          },
+          {
+            "state": {
+              "current_location": "microwave 1",
+              "current_inventory": "plate 1",
+              "locations_visited": [
+                "fridge 1",
+                "microwave 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "heat plate 1 with microwave 1"
+          },
+          {
+            "state": {
+              "current_location": "microwave 1",
+              "current_inventory": "plate 1",
+              "locations_visited": [
+                "fridge 1",
+                "microwave 1"
+              ],
+              "completed_treatments": [
+                "heat plate 1"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to countertop 1"
+          },
+          {
+            "state": {
+              "current_location": "countertop 1",
+              "current_inventory": "plate 1",
+              "locations_visited": [
+                "fridge 1",
+                "microwave 1",
+                "countertop 1"
+              ],
+              "completed_treatments": [
+                "heat plate 1"
+              ],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move plate 1 to countertop 1"
+          }
+        ]
+      }
+    ],
+    "pick_and_place_simple": [
+      {
+        "episode_id": "alfworld/walkthrough/47ba110d0d5b",
+        "split": "train",
+        "instruction": "put some soapbottle on toilet.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to garbagecan 1"
+          },
+          {
+            "state": {
+              "current_location": "garbagecan 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "garbagecan 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take soapbottle 1 from garbagecan 1"
+          },
+          {
+            "state": {
+              "current_location": "garbagecan 1",
+              "current_inventory": "soapbottle 1",
+              "locations_visited": [
+                "garbagecan 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to toilet 1"
+          },
+          {
+            "state": {
+              "current_location": "toilet 1",
+              "current_inventory": "soapbottle 1",
+              "locations_visited": [
+                "garbagecan 1",
+                "toilet 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move soapbottle 1 to toilet 1"
+          }
+        ]
+      },
+      {
+        "episode_id": "alfworld/walkthrough/91b165c2f237",
+        "split": "train",
+        "instruction": "put some keychain on desk.",
+        "steps": [
+          {
+            "state": {
+              "current_location": "starting location",
+              "current_inventory": "none",
+              "locations_visited": [],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to sidetable 1"
+          },
+          {
+            "state": {
+              "current_location": "sidetable 1",
+              "current_inventory": "none",
+              "locations_visited": [
+                "sidetable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "take keychain 1 from sidetable 1"
+          },
+          {
+            "state": {
+              "current_location": "sidetable 1",
+              "current_inventory": "keychain 1",
+              "locations_visited": [
+                "sidetable 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "go to desk 1"
+          },
+          {
+            "state": {
+              "current_location": "desk 1",
+              "current_inventory": "keychain 1",
+              "locations_visited": [
+                "sidetable 1",
+                "desk 1"
+              ],
+              "completed_treatments": [],
+              "completed_placements": [],
+              "used_devices": []
+            },
+            "action": "move keychain 1 to desk 1"
+          }
+        ]
+      }
+    ]
+  },
+  "source_subset": "D120 nested training portion of D240"
+}

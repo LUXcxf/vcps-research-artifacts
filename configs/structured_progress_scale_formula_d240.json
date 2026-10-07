@@ -1,0 +1,60 @@
+{
+  "schema_version": "verifier-compiled-progress-scale-formula-v2",
+  "scope": "task_shared_seven_scale_structural_formula",
+  "generator": {
+    "type": "signed_structural_scale_decomposition",
+    "scale_names": [
+      "exact_evidence",
+      "partial_evidence",
+      "weak_evidence",
+      "entity_binding",
+      "workflow_progress",
+      "prerequisite_risk",
+      "cycle_cost"
+    ],
+    "cost_axioms": {
+      "base_cost": 1.0,
+      "unit": "one_redundant_skill_call"
+    },
+    "profile_source": "verifier_factor_role_and_workflow_dependency_structure",
+    "polarity_source": "verifier_transition_contract"
+  },
+  "factor_names": [
+    "goal_token_exact",
+    "goal_token_partial",
+    "observation_token",
+    "take_schema",
+    "introspection_schema",
+    "revisit_unit",
+    "revisit_floor",
+    "entity_match",
+    "entity_mismatch",
+    "entity_mention",
+    "visible_target_take",
+    "visible_target_navigation",
+    "delivery_action",
+    "delivery_navigation_ready",
+    "delivery_navigation_unready",
+    "delivery_reference",
+    "treatment_action",
+    "treatment_navigation_held",
+    "treatment_navigation_unheld",
+    "premature_delivery",
+    "light_repeat",
+    "light_first_use",
+    "light_examine",
+    "light_examine_ready",
+    "light_navigation",
+    "light_premature_move",
+    "multi_object_delivery",
+    "multi_object_acquisition",
+    "recent_repeat",
+    "inverse_transition"
+  ],
+  "construction_provenance": {
+    "factor_source": "observable_goal_state_and_verifier_transition_contract",
+    "coefficient_source": "task_shared_structural_scales",
+    "valid_labels_used": false,
+    "expert_next_actions_used": false
+  }
+}

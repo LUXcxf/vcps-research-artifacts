@@ -1,0 +1,27 @@
+{
+  "schema_version": "vcps-alf-aligned-workstation-protocol-v1",
+  "source_method": {
+    "name": "VCPS actor + contract structural progress + verifier feedback residual"
+  },
+  "workstation_transfer": {
+    "release": "materials-workflow-episode-v1.1",
+    "actor_train_episodes": 120,
+    "residual_source": "verifier continuation pairs from the same D120 train episodes",
+    "test_episodes": 240,
+    "test_selection": "all non-train release rows, frozen before evaluation",
+    "candidate_protocol": "all_legal_actions",
+    "action_budget": 50,
+    "structural_profile": "alf_aligned",
+    "residual_application_mode": "continuous_legal_candidate",
+    "structural_weight": 0.25,
+    "residual_weight": 0.25,
+    "invalid_action_policy": "verifier_rejects_before_selection"
+  },
+  "factor_contract": {
+    "factor_map": "workstation_factor_map_v2.json",
+    "formula": "workstation_six_scale_formula_v2.json",
+    "factor_count": 6,
+    "inactive_parent_scale": "weak_evidence",
+    "test_time_task_family_rules": []
+  }
+}

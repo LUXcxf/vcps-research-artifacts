@@ -1,0 +1,25 @@
+{
+  "schema_version": "workstation-verifier-residual-training-v1",
+  "epochs": 40,
+  "learning_rate": 0.08,
+  "l2": 0.0001,
+  "seed": 23,
+  "feature_count": 100,
+  "train": {
+    "pairs": 16495,
+    "correct": 16479,
+    "pair_accuracy": 0.9990300090936648,
+    "idempotent_negative_pairs": 3811,
+    "idempotent_negative_correct": 3811,
+    "idempotent_negative_accuracy": 1.0
+  },
+  "holdout": {
+    "pairs": 3784,
+    "correct": 3780,
+    "pair_accuracy": 0.9989429175475687,
+    "idempotent_negative_pairs": 879,
+    "idempotent_negative_correct": 879,
+    "idempotent_negative_accuracy": 1.0
+  },
+  "supervision": "train_split_verifier_continuation_distance"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "residual-ranker-train-provenance-v1",
+  "train": "data/feedback/d240_train.jsonl",
+  "holdout": "data/feedback/d240_holdout.jsonl",
+  "train_pairs": 7309,
+  "holdout_pairs": 1116,
+  "epochs": 50,
+  "learning_rate": 0.08,
+  "l2": 0.0001,
+  "seed": 23,
+  "feature_count": 627,
+  "initialization": "zero",
+  "feature_scope": "all_observed_train_features",
+  "training_stages": 1,
+  "train_pair_accuracy": 0.9211930496647969,
+  "holdout_pair_accuracy": 0.8987455197132617,
+  "supervision": "verifier_feedback_only_train_split",
+  "expert_action_fields_used": false,
+  "valid_unseen_labels_used": false,
+  "hidden_state_used": false
+}

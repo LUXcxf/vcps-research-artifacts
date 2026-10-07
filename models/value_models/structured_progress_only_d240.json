@@ -1,0 +1,10 @@
+{
+  "schema_version": "structured-progress-potential-runtime-v1",
+  "supervision_source": "task_goal_and_observable_transition_contract",
+  "coefficient_config": "../../configs/structured_progress_scale_formula_d240.json",
+  "structured_weight": 1.0,
+  "semantic_weight": 0.0,
+  "feature_view": "verifier_compiled_structured_progress_only",
+  "candidate_projection": "disabled",
+  "hidden_state_access": false
+}

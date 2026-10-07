@@ -1,0 +1,12 @@
+{
+  "schema_version": "workstation-transfer-asset-audit-v1",
+  "actor_rows": 720,
+  "actor_episodes": 120,
+  "residual_train_pairs": 16495,
+  "residual_holdout_pairs": 3784,
+  "residual_train_episodes": 97,
+  "residual_holdout_episodes": 23,
+  "train_holdout_overlap": [],
+  "action_budget": 50,
+  "test_splits_used": []
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "qwen-lora-step-checkpoint-v1",
+  "output_dir": "models/actor_adapter",
+  "step_checkpoint_dir": "models/actor_adapter",
+  "data": "data/actor/d240_train.jsonl",
+  "epoch": 1,
+  "epoch_index": 0,
+  "batch_index": 512,
+  "next_batch_index": 512,
+  "optimizer_step": 64,
+  "loss": 0.0008583570015616715,
+  "elapsed_sec": 53800.1691
+}

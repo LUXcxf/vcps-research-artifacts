@@ -1,0 +1,24 @@
+{
+  "schema": "stateact-style-reference-v1",
+  "implementation_scope": "Local legal-candidate reference implementation inspired by StateAct",
+  "upstream": {
+    "url": "https://github.com/ai-nikolai/StateAct",
+    "commit": "8fb47be6f5f3978a38726608ae347987341f1d82"
+  },
+  "actor_adapter": "models/actor_adapter",
+  "demonstrations": "data/baselines/stateact_train_examples.json",
+  "selected": "tracked_one",
+  "grid": ["tracked_one", "tracked_two", "generated_two"],
+  "selection_record": "results/provenance/stateact_style_selection.json",
+  "state_representation": "action-derived observable summary, current observation and persistent goal",
+  "history_window": 0,
+  "generation_tokens": 192,
+  "seed": 42,
+  "candidate_limit": 16,
+  "score_batch_size": 4,
+  "max_new_tokens": 32,
+  "max_steps": 50,
+  "test_manifest": "data/manifests/valid_unseen134.jsonl",
+  "development_manifest": "data/manifests/valid_seen_dev70.jsonl",
+  "reference_execution": "results/provenance/stateact_style_execution.json"
+}

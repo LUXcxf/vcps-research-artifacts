@@ -1,0 +1,41 @@
+{
+  "schema_version": "workstation-factor-map-v2",
+  "factors": {
+    "goal_completion": {
+      "polarity": 1,
+      "role_profile": {
+        "exact_evidence": 1.0
+      }
+    },
+    "lifecycle_progress": {
+      "polarity": 1,
+      "role_profile": {
+        "workflow_progress": 1.0
+      }
+    },
+    "readiness_progress": {
+      "polarity": 1,
+      "role_profile": {
+        "partial_evidence": 1.0
+      }
+    },
+    "entity_priority_binding": {
+      "polarity": 1,
+      "role_profile": {
+        "entity_binding": 1.0
+      }
+    },
+    "prerequisite_violation": {
+      "polarity": -1,
+      "role_profile": {
+        "prerequisite_risk": 1.0
+      }
+    },
+    "cycle_execution_cost": {
+      "polarity": -1,
+      "role_profile": {
+        "cycle_cost": 1.0
+      }
+    }
+  }
+}

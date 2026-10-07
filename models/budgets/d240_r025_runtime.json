@@ -1,0 +1,9 @@
+{
+  "schema_version": "structured-progress-potential-runtime-v1",
+  "coefficient_config": "../../configs/structured_progress_scale_formula_d240.json",
+  "semantic_ranker": "d240_r025_ranker.json",
+  "structured_weight": 1.0,
+  "semantic_weight": 1.0,
+  "candidate_projection": "disabled",
+  "hidden_state_used": false
+}

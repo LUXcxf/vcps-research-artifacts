@@ -1,0 +1,62 @@
+{
+  "sampling_unit": "observable source state",
+  "state_identity": "episode_id + step_index + observation + previous_actions",
+  "sampling": "task-family-stratified nested stable-hash",
+  "seed": 17,
+  "full_pairs": 7309,
+  "full_states": 526,
+  "coverage_denominator": "training source states with successful and unsuccessful candidate branches producing preference comparisons",
+  "collected_source_states": 1403,
+  "coverage_measure": "residual-training supervision subset",
+  "feature_namespace": "627 coordinates observed in the full D240 training split",
+  "ratios": {
+    "25": {
+      "states": 131,
+      "episodes": 98,
+      "pairs": 1572,
+      "pair_fraction": 0.215077301956492,
+      "state_fraction": 0.24904942965779467,
+      "family_pair_counts": {
+        "look_at_obj_in_light": 268,
+        "pick_and_place_simple": 344,
+        "pick_clean_then_place_in_recep": 240,
+        "pick_cool_then_place_in_recep": 312,
+        "pick_heat_then_place_in_recep": 100,
+        "pick_two_obj_and_place": 308
+      },
+      "train": "data/budgets/d240_r025_train.jsonl"
+    },
+    "50": {
+      "states": 261,
+      "episodes": 160,
+      "pairs": 3468,
+      "pair_fraction": 0.4744835134765358,
+      "state_fraction": 0.49619771863117873,
+      "family_pair_counts": {
+        "look_at_obj_in_light": 680,
+        "pick_and_place_simple": 780,
+        "pick_clean_then_place_in_recep": 492,
+        "pick_cool_then_place_in_recep": 620,
+        "pick_heat_then_place_in_recep": 228,
+        "pick_two_obj_and_place": 668
+      },
+      "train": "data/budgets/d240_r050_train.jsonl"
+    },
+    "75": {
+      "states": 395,
+      "episodes": 191,
+      "pairs": 5517,
+      "pair_fraction": 0.7548228211793679,
+      "state_fraction": 0.7509505703422054,
+      "family_pair_counts": {
+        "look_at_obj_in_light": 1048,
+        "pick_and_place_simple": 1144,
+        "pick_clean_then_place_in_recep": 820,
+        "pick_cool_then_place_in_recep": 1056,
+        "pick_heat_then_place_in_recep": 392,
+        "pick_two_obj_and_place": 1057
+      },
+      "train": "data/budgets/d240_r075_train.jsonl"
+    }
+  }
+}

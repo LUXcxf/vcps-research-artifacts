@@ -1,0 +1,30 @@
+{
+  "bundle_sha256": "50e40ed15ec56bafed423c3d26edf6677371050493015fb13d15c258486906a1",
+  "manifest_sha256": "48592cc673f4af8c781f40634a3a33da9266f038ff1944d5682e772143fa58df",
+  "adapter_sha256": "28fe33aa23100618eeeb6b3f6136ac66d5fa79244d4e9a328aa78ec2c3f61f25",
+  "adapter_config_sha256": "c9a60f01c410b3bf18456e080d543ea27850fe205631ea493c1f45df1ee3f178",
+  "stateact": "tracked_one",
+  "environment": {
+    "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:16:53) [GCC 14.3.0]",
+    "machine": "aarch64",
+    "packages": {
+      "torch": "2.8.0+cu12.8",
+      "transformers": "5.10.1",
+      "peft": "0.19.1",
+      "accelerate": "1.13.0",
+      "bitsandbytes": "0.49.2",
+      "safetensors": "0.7.0"
+    },
+    "cuda": "12.8",
+    "gpu": "NVIDIA A100-PCIE-40GB"
+  },
+  "runtime_sha256": null,
+  "candidate_limit": 16,
+  "score_batch_size": 4,
+  "action_budget": 50,
+  "progress_weight": 0,
+  "value_components": [],
+  "base_model_assets_sha256": "8b845c8438f2dca0e0f4932c8b6196f37f55a7fab6d1a3a7fb259b520709acd6",
+  "published_trace_sha256": "31fcaff12d1ac301e11ac08cd66a692472dd41a5e2d2a2f59bca549188d7e863",
+  "reference_profile": "Linux A100/aarch64"
+}

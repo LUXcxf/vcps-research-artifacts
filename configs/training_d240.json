@@ -1,0 +1,37 @@
+{
+  "schema_version": "vcps-d240-training-config-v1",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "actor": {
+    "data": "data/actor/d240_train.jsonl",
+    "sample_count": 1403,
+    "epochs": 1,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 0.0001,
+    "max_length": 768,
+    "max_optimizer_steps": 64,
+    "save_every_optimizer_steps": 8,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+    "seed": 42
+  },
+  "residual": {
+    "train": "data/feedback/d240_train.jsonl",
+    "holdout": "data/feedback/d240_holdout.jsonl",
+    "train_pairs": 7309,
+    "holdout_pairs": 1116,
+    "epochs": 50,
+    "learning_rate": 0.08,
+    "l2": 0.0001,
+    "seed": 23
+  },
+  "evaluation": {
+    "candidate_limit": 16,
+    "max_steps": 50,
+    "progress_value_weight": 0.25,
+    "actor_score": "full_action_continuation",
+    "action_interface": "observable_admissible_actions"
+  }
+}

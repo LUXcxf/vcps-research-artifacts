@@ -1,0 +1,28 @@
+{
+  "schema_version": "workstation-six-scale-formula-v2",
+  "source": {
+    "name": "Shared contract cost axioms"
+  },
+  "parent_ontology": "shared_contract_semantic_scales",
+  "inactive_scales": [
+    "weak_evidence"
+  ],
+  "cost_axioms": {
+    "base_cost": 1.0,
+    "unit": "one_redundant_skill_call"
+  },
+  "active_scales": [
+    "exact_evidence",
+    "partial_evidence",
+    "entity_binding",
+    "workflow_progress",
+    "prerequisite_risk",
+    "cycle_cost"
+  ],
+  "score_protocol": {
+    "structural_weight": 0.25,
+    "residual_weight": 0.25,
+    "residual_bound": 2.0,
+    "normalization": "state_local_signed_max"
+  }
+}

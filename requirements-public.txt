@@ -1,0 +1,11 @@
+# Install torch==2.8.0 from the CUDA 12.8 wheel index before this file.
+transformers==5.10.1
+peft==0.19.1
+accelerate==1.13.0
+bitsandbytes==0.49.2
+safetensors==0.7.0
+tqdm==4.67.3
+pandas==2.3.2
+matplotlib==3.10.6
+
+# ALFWorld is an upstream dependency and is intentionally not vendored here.

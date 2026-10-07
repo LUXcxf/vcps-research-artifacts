@@ -1,0 +1,34 @@
+{
+  "schema_version": "vcps-scale-report-v2",
+  "scale": "D30",
+  "evaluation": "ALFWorld valid-unseen134",
+  "protocol": {
+    "candidate_limit": 16,
+    "max_steps": 50,
+    "checkpoint_rule": "step64 selected on a fixed development subset",
+    "invalid_action_count": 0
+  },
+  "actor": {
+    "success_count": 58,
+    "success_rate": 0.43283582089552236,
+    "average_steps": 33.67910447761194,
+    "report": "results/reports/d30_actor.json",
+    "episodes": "results/episodes/d30_actor.jsonl"
+  },
+  "vcps": {
+    "success_count": 97,
+    "success_rate": 0.7238805970149254,
+    "average_steps": 26.03731343283582,
+    "report": "results/reports/d30_full.json",
+    "episodes": "results/episodes/d30_full.jsonl"
+  },
+  "training": {
+    "expert_episodes": 30,
+    "actor_rows": 174,
+    "feedback_train_pairs": 868,
+    "feedback_holdout_pairs": 112,
+    "residual_initialization": "zero",
+    "residual_training_stages": 1,
+    "residual_feature_scope": "all_observed_train_features"
+  }
+}

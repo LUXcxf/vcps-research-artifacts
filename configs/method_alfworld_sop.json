@@ -1,0 +1,57 @@
+{
+  "schema_version": "vcps-workflow-contract-v1",
+  "max_precedence_edges_per_workflow": 10,
+  "workflows": {
+    "pick_and_place_simple": {
+      "milestones": [
+        {"id": "acquired", "predicates": ["acquired_1"]},
+        {"id": "delivered", "predicates": ["delivered"]}
+      ],
+      "precedence": [["acquired", "delivered"]]
+    },
+    "pick_clean_then_place_in_recep": {
+      "milestones": [
+        {"id": "acquired", "predicates": ["acquired_1"]},
+        {"id": "treated", "predicates": ["treated"]},
+        {"id": "delivered", "predicates": ["delivered"]}
+      ],
+      "precedence": [["acquired", "treated"], ["treated", "delivered"]]
+    },
+    "pick_cool_then_place_in_recep": {
+      "milestones": [
+        {"id": "acquired", "predicates": ["acquired_1"]},
+        {"id": "treated", "predicates": ["treated"]},
+        {"id": "delivered", "predicates": ["delivered"]}
+      ],
+      "precedence": [["acquired", "treated"], ["treated", "delivered"]]
+    },
+    "pick_heat_then_place_in_recep": {
+      "milestones": [
+        {"id": "acquired", "predicates": ["acquired_1"]},
+        {"id": "treated", "predicates": ["treated"]},
+        {"id": "delivered", "predicates": ["delivered"]}
+      ],
+      "precedence": [["acquired", "treated"], ["treated", "delivered"]]
+    },
+    "pick_two_obj_and_place": {
+      "milestones": [
+        {"id": "acquired_1", "predicates": ["acquired_1"]},
+        {"id": "delivered_1", "predicates": ["delivered_1"]},
+        {"id": "acquired_2", "predicates": ["acquired_2"]},
+        {"id": "delivered_2", "predicates": ["delivered_2"]}
+      ],
+      "precedence": [
+        ["acquired_1", "delivered_1"],
+        ["delivered_1", "acquired_2"],
+        ["acquired_2", "delivered_2"]
+      ]
+    },
+    "look_at_obj_in_light": {
+      "milestones": [
+        {"id": "acquired", "predicates": ["acquired_1"]},
+        {"id": "inspected", "predicates": ["inspected_under_light"]}
+      ],
+      "precedence": [["acquired", "inspected"]]
+    }
+  }
+}

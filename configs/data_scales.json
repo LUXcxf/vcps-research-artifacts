@@ -1,0 +1,79 @@
+{
+  "schema_version": "vcps-data-scale-config-v1",
+  "shared": {
+    "base_model": "Qwen/Qwen3.5-9B",
+    "actor_epochs": 1,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+    "actor_seed": 42,
+    "residual_epochs": 50,
+    "residual_learning_rate": 0.08,
+    "residual_l2": 0.0001,
+    "residual_seed": 23,
+    "residual_initialization": "zero",
+    "residual_training_stages": 1,
+    "residual_feature_scope": "all_observed_train_features",
+    "candidate_limit": 16,
+    "max_steps": 50,
+    "progress_value_weight": 0.25
+  },
+  "scales": {
+    "D30": {
+      "expert_episodes": 30,
+      "actor_rows": 174,
+      "actor_data": "data/scales/d30_actor_train.jsonl",
+      "feedback_train": "data/scales/d30_feedback_train.jsonl",
+      "feedback_holdout": "data/scales/d30_feedback_holdout.jsonl",
+      "feedback_train_pairs": 868,
+      "feedback_holdout_pairs": 112,
+      "actor_epochs": 3,
+      "actor_learning_rate": 0.0001,
+      "max_length": 768,
+      "selected_optimizer_step": 64
+    },
+    "D60": {
+      "expert_episodes": 60,
+      "actor_rows": 350,
+      "actor_data": "data/scales/d60_actor_train.jsonl",
+      "feedback_train": "data/scales/d60_feedback_train.jsonl",
+      "feedback_holdout": "data/scales/d60_feedback_holdout.jsonl",
+      "feedback_train_pairs": 1581,
+      "feedback_holdout_pairs": 392,
+      "actor_epochs": 2,
+      "actor_learning_rate": 0.0001,
+      "max_length": 768,
+      "selected_optimizer_step": 64
+    },
+    "D120": {
+      "expert_episodes": 120,
+      "actor_rows": 702,
+      "actor_data": "data/scales/d120_actor_train.jsonl",
+      "feedback_train": "data/scales/d120_feedback_train.jsonl",
+      "feedback_holdout": "data/scales/d120_feedback_holdout.jsonl",
+      "feedback_train_pairs": 3036,
+      "feedback_holdout_pairs": 718,
+      "actor_epochs": 1,
+      "actor_learning_rate": 0.0001,
+      "max_length": 768,
+      "selected_optimizer_step": 64
+    },
+    "D240": {
+      "expert_episodes": 240,
+      "actor_rows": 1403,
+      "actor_data": "data/actor/d240_train.jsonl",
+      "feedback_train": "data/feedback/d240_train.jsonl",
+      "feedback_holdout": "data/feedback/d240_holdout.jsonl",
+      "feedback_train_pairs": 7309,
+      "feedback_holdout_pairs": 1116,
+      "actor_learning_rate": 0.0001,
+      "max_length": 768,
+      "selected_optimizer_step": 64,
+      "actor_epochs": 1
+    }
+  },
+  "evaluation_scope": "Scale-adapted training on nested expert and verifier-feedback records under a shared valid-unseen134 evaluation protocol."
+}

@@ -1,0 +1,377 @@
+{
+  "schema_version": "workstation-closed-loop-evaluation-report-v1",
+  "adapter_path": "models/actor_adapter",
+  "residual_path": "artifacts/models/residual_v1.json",
+  "source": "tests",
+  "case_count": 240,
+  "config": {
+    "action_budget": 50,
+    "structural_weight": 0.25,
+    "residual_weight": 0.25,
+    "candidate_protocol": "all_legal_actions",
+    "structural_profile": "alf_aligned",
+    "residual_application_mode": "continuous_legal_candidate"
+  },
+  "summaries": {
+    "actor": {
+      "overall": {
+        "episodes": 240,
+        "successes": 86,
+        "success_rate": 0.35833333333333334,
+        "illegal_actions": 0,
+        "budget_exhausted": 69,
+        "stagnation_detected": 17,
+        "cycle_detected": 68,
+        "mean_steps": 32.079166666666666,
+        "mean_cost": 61.65416666666667
+      },
+      "split:compositional_unseen": {
+        "episodes": 80,
+        "successes": 2,
+        "success_rate": 0.025,
+        "illegal_actions": 0,
+        "budget_exhausted": 45,
+        "stagnation_detected": 8,
+        "cycle_detected": 25,
+        "mean_steps": 43.5375,
+        "mean_cost": 82.5125
+      },
+      "scope:full_cycle": {
+        "episodes": 60,
+        "successes": 3,
+        "success_rate": 0.05,
+        "illegal_actions": 0,
+        "budget_exhausted": 34,
+        "stagnation_detected": 7,
+        "cycle_detected": 16,
+        "mean_steps": 45.7,
+        "mean_cost": 89.71666666666667
+      },
+      "scope:prep_to_ir": {
+        "episodes": 40,
+        "successes": 10,
+        "success_rate": 0.25,
+        "illegal_actions": 0,
+        "budget_exhausted": 11,
+        "stagnation_detected": 1,
+        "cycle_detected": 18,
+        "mean_steps": 32.7,
+        "mean_cost": 63.6
+      },
+      "scope:ir_only": {
+        "episodes": 60,
+        "successes": 20,
+        "success_rate": 0.3333333333333333,
+        "illegal_actions": 0,
+        "budget_exhausted": 16,
+        "stagnation_detected": 7,
+        "cycle_detected": 17,
+        "mean_steps": 29.083333333333332,
+        "mean_cost": 53.68333333333333
+      },
+      "split:recovery_test": {
+        "episodes": 80,
+        "successes": 53,
+        "success_rate": 0.6625,
+        "illegal_actions": 0,
+        "budget_exhausted": 8,
+        "stagnation_detected": 2,
+        "cycle_detected": 17,
+        "mean_steps": 23.8,
+        "mean_cost": 45.6125
+      },
+      "scope:recovery": {
+        "episodes": 80,
+        "successes": 53,
+        "success_rate": 0.6625,
+        "illegal_actions": 0,
+        "budget_exhausted": 8,
+        "stagnation_detected": 2,
+        "cycle_detected": 17,
+        "mean_steps": 23.8,
+        "mean_cost": 45.6125
+      },
+      "split:seen_test": {
+        "episodes": 80,
+        "successes": 31,
+        "success_rate": 0.3875,
+        "illegal_actions": 0,
+        "budget_exhausted": 16,
+        "stagnation_detected": 7,
+        "cycle_detected": 26,
+        "mean_steps": 28.9,
+        "mean_cost": 56.8375
+      }
+    },
+    "actor_structural": {
+      "overall": {
+        "episodes": 240,
+        "successes": 214,
+        "success_rate": 0.8916666666666667,
+        "illegal_actions": 0,
+        "budget_exhausted": 20,
+        "stagnation_detected": 2,
+        "cycle_detected": 4,
+        "mean_steps": 23.083333333333332,
+        "mean_cost": 51.72083333333333
+      },
+      "split:compositional_unseen": {
+        "episodes": 80,
+        "successes": 54,
+        "success_rate": 0.675,
+        "illegal_actions": 0,
+        "budget_exhausted": 20,
+        "stagnation_detected": 2,
+        "cycle_detected": 4,
+        "mean_steps": 36.5375,
+        "mean_cost": 81.8125
+      },
+      "scope:full_cycle": {
+        "episodes": 60,
+        "successes": 43,
+        "success_rate": 0.7166666666666667,
+        "illegal_actions": 0,
+        "budget_exhausted": 16,
+        "stagnation_detected": 0,
+        "cycle_detected": 1,
+        "mean_steps": 37.21666666666667,
+        "mean_cost": 85.15
+      },
+      "scope:prep_to_ir": {
+        "episodes": 40,
+        "successes": 36,
+        "success_rate": 0.9,
+        "illegal_actions": 0,
+        "budget_exhausted": 3,
+        "stagnation_detected": 0,
+        "cycle_detected": 1,
+        "mean_steps": 22.875,
+        "mean_cost": 52.325
+      },
+      "scope:ir_only": {
+        "episodes": 60,
+        "successes": 55,
+        "success_rate": 0.9166666666666666,
+        "illegal_actions": 0,
+        "budget_exhausted": 1,
+        "stagnation_detected": 2,
+        "cycle_detected": 2,
+        "mean_steps": 19.45,
+        "mean_cost": 43.483333333333334
+      },
+      "split:recovery_test": {
+        "episodes": 80,
+        "successes": 80,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 15.3125,
+        "mean_cost": 32.525
+      },
+      "scope:recovery": {
+        "episodes": 80,
+        "successes": 80,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 15.3125,
+        "mean_cost": 32.525
+      },
+      "split:seen_test": {
+        "episodes": 80,
+        "successes": 80,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 17.4,
+        "mean_cost": 40.825
+      }
+    },
+    "actor_residual": {
+      "overall": {
+        "episodes": 240,
+        "successes": 212,
+        "success_rate": 0.8833333333333333,
+        "illegal_actions": 0,
+        "budget_exhausted": 15,
+        "stagnation_detected": 11,
+        "cycle_detected": 3,
+        "mean_steps": 21.025,
+        "mean_cost": 49.49166666666667
+      },
+      "split:compositional_unseen": {
+        "episodes": 80,
+        "successes": 53,
+        "success_rate": 0.6625,
+        "illegal_actions": 0,
+        "budget_exhausted": 15,
+        "stagnation_detected": 10,
+        "cycle_detected": 3,
+        "mean_steps": 33.125,
+        "mean_cost": 78.95
+      },
+      "scope:full_cycle": {
+        "episodes": 60,
+        "successes": 44,
+        "success_rate": 0.7333333333333333,
+        "illegal_actions": 0,
+        "budget_exhausted": 12,
+        "stagnation_detected": 5,
+        "cycle_detected": 0,
+        "mean_steps": 34.25,
+        "mean_cost": 82.66666666666667
+      },
+      "scope:prep_to_ir": {
+        "episodes": 40,
+        "successes": 34,
+        "success_rate": 0.85,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 5,
+        "cycle_detected": 1,
+        "mean_steps": 19.075,
+        "mean_cost": 46.175
+      },
+      "scope:ir_only": {
+        "episodes": 60,
+        "successes": 55,
+        "success_rate": 0.9166666666666666,
+        "illegal_actions": 0,
+        "budget_exhausted": 3,
+        "stagnation_detected": 0,
+        "cycle_detected": 2,
+        "mean_steps": 18.533333333333335,
+        "mean_cost": 43.5
+      },
+      "split:recovery_test": {
+        "episodes": 80,
+        "successes": 79,
+        "success_rate": 0.9875,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 1,
+        "cycle_detected": 0,
+        "mean_steps": 13.95,
+        "mean_cost": 30.7625
+      },
+      "scope:recovery": {
+        "episodes": 80,
+        "successes": 79,
+        "success_rate": 0.9875,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 1,
+        "cycle_detected": 0,
+        "mean_steps": 13.95,
+        "mean_cost": 30.7625
+      },
+      "split:seen_test": {
+        "episodes": 80,
+        "successes": 80,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 16.0,
+        "mean_cost": 38.7625
+      }
+    },
+    "full": {
+      "overall": {
+        "episodes": 240,
+        "successes": 237,
+        "success_rate": 0.9875,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 3,
+        "mean_steps": 20.658333333333335,
+        "mean_cost": 48.7625
+      },
+      "split:compositional_unseen": {
+        "episodes": 80,
+        "successes": 77,
+        "success_rate": 0.9625,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 3,
+        "mean_steps": 32.75,
+        "mean_cost": 78.825
+      },
+      "scope:full_cycle": {
+        "episodes": 60,
+        "successes": 60,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 34.95,
+        "mean_cost": 83.4
+      },
+      "scope:prep_to_ir": {
+        "episodes": 40,
+        "successes": 37,
+        "success_rate": 0.925,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 3,
+        "mean_steps": 19.85,
+        "mean_cost": 47.35
+      },
+      "scope:ir_only": {
+        "episodes": 60,
+        "successes": 60,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 16.6,
+        "mean_cost": 41.13333333333333
+      },
+      "split:recovery_test": {
+        "episodes": 80,
+        "successes": 80,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 13.3875,
+        "mean_cost": 29.2125
+      },
+      "scope:recovery": {
+        "episodes": 80,
+        "successes": 80,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 13.3875,
+        "mean_cost": 29.2125
+      },
+      "split:seen_test": {
+        "episodes": 80,
+        "successes": 80,
+        "success_rate": 1.0,
+        "illegal_actions": 0,
+        "budget_exhausted": 0,
+        "stagnation_detected": 0,
+        "cycle_detected": 0,
+        "mean_steps": 15.8375,
+        "mean_cost": 38.25
+      }
+    }
+  }
+}

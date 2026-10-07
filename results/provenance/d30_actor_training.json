@@ -1,0 +1,27 @@
+{
+  "schema_version": "qwen-lora-train-report-v1",
+  "sample_count": 174,
+  "epochs": 3,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "optimizer_steps": 64,
+  "learning_rate": 0.0001,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "trainable_parameters": 1966080,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "data": "data/scales/d30_actor_train.jsonl",
+  "max_length": 768,
+  "seed": 42,
+  "lora_dropout": 0.05,
+  "initialization": "base_model",
+  "released_adapter": "models/scales/d30/actor_adapter",
+  "checkpoint_selection": "Optimizer-step64 selected on a fixed 36-example development subset",
+  "actor_data_sha256": "4e96a47273bf65cb1eb11cb48d86cd8355fa7d5798cd23bb09783b2ac9d18650"
+}

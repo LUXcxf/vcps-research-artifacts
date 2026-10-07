@@ -1,0 +1,19 @@
+{
+  "schema_version": "qwen-lora-train-provenance-v1",
+  "data": "data/actor/d240_train.jsonl",
+  "sample_count": 1403,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "epochs": 1,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "optimizer_steps": 64,
+  "learning_rate": 0.0001,
+  "max_length": 768,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+  "seed": 42,
+  "checkpoint_selection": "Balanced24 screening followed by valid-seen dev70 selection",
+  "released_adapter": "models/actor_adapter"
+}

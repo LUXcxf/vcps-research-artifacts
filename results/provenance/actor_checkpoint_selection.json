@@ -1,0 +1,123 @@
+{
+  "schema": "actor-checkpoint-selection-v1",
+  "D240": {
+    "metric": "closed-loop completion followed by average interaction steps",
+    "evaluation_variant": "VCPS",
+    "screening_manifest": "data/manifests/valid_seen_balanced24.jsonl",
+    "development_manifest": "data/manifests/valid_seen_dev70.jsonl",
+    "screening": [
+      {
+        "step": 24,
+        "success_count": 12,
+        "success_rate": 0.5,
+        "average_steps": 32.25,
+        "invalid_action_count": 0
+      },
+      {
+        "step": 32,
+        "success_count": 14,
+        "success_rate": 0.5833333333333334,
+        "average_steps": 29.75,
+        "invalid_action_count": 0
+      },
+      {
+        "step": 40,
+        "success_count": 17,
+        "success_rate": 0.7083333333333334,
+        "average_steps": 23.333333333333332,
+        "invalid_action_count": 0
+      },
+      {
+        "step": 48,
+        "success_count": 17,
+        "success_rate": 0.7083333333333334,
+        "average_steps": 23.5,
+        "invalid_action_count": 0
+      },
+      {
+        "step": 56,
+        "success_count": 21,
+        "success_rate": 0.875,
+        "average_steps": 18.833333333333332,
+        "invalid_action_count": 0
+      },
+      {
+        "step": 64,
+        "success_count": 21,
+        "success_rate": 0.875,
+        "average_steps": 16.75,
+        "invalid_action_count": 0
+      }
+    ],
+    "development": [
+      {
+        "step": 64,
+        "success_count": 63,
+        "success_rate": 0.9,
+        "average_steps": 17.185714285714287,
+        "invalid_action_count": 0
+      },
+      {
+        "step": 56,
+        "success_count": 61,
+        "success_rate": 0.8714285714285714,
+        "average_steps": 18.87142857142857,
+        "invalid_action_count": 0
+      }
+    ],
+    "selected_optimizer_step": 64,
+    "adapter": "models/actor_adapter",
+    "adapter_sha256": "28fe33aa23100618eeeb6b3f6136ac66d5fa79244d4e9a328aa78ec2c3f61f25"
+  },
+  "scale_actors": {
+    "metric": "next-skill exact match on 36 fixed valid-seen examples (six per family)",
+    "selection": "shared optimizer step maximizing the summed exact matches across D30, D60 and D120",
+    "selected_optimizer_step": 64,
+    "development": [
+      {
+        "step": 24,
+        "exact_match_counts": {
+          "D30": 23,
+          "D60": 23,
+          "D120": 23
+        },
+        "combined_correct": 69,
+        "combined_examples": 108
+      },
+      {
+        "step": 40,
+        "exact_match_counts": {
+          "D30": 23,
+          "D60": 21,
+          "D120": 26
+        },
+        "combined_correct": 70,
+        "combined_examples": 108
+      },
+      {
+        "step": 64,
+        "exact_match_counts": {
+          "D30": 26,
+          "D60": 25,
+          "D120": 24
+        },
+        "combined_correct": 75,
+        "combined_examples": 108
+      }
+    ],
+    "adapters": {
+      "D30": {
+        "path": "models/scales/d30/actor_adapter",
+        "sha256": "d2abb1a1cbffdeab7ab7ee9cf806f0cceb711ab9707f13d1b327e94a6b259aa3"
+      },
+      "D60": {
+        "path": "models/scales/d60/actor_adapter",
+        "sha256": "c4e50b470441555a65d5f65a06da63599cadb212afe628482525d80e671d44f5"
+      },
+      "D120": {
+        "path": "models/scales/d120/actor_adapter",
+        "sha256": "0c7516661491b72ec45336842c618623ae52992fc9292baa98bbc5f30efc94f9"
+      }
+    }
+  }
+}

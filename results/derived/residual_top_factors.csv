@@ -1,0 +1,11 @@
+feature,display_name,group,weight,mean_signed_contribution,mean_absolute_contribution
+delta:holding_target,holding target,Verified effects,1.4546453612032557,0.07168951152883428,0.29327527443614027
+schema:close,close action,Action schema,-1.1468132314107906,0.04007680647403301,0.04007680647403301
+delta:target_acquired,target acquired,Verified effects,1.169319124299681,0.10268214532380712,0.11106436126860769
+delta:opened,opened state,Verified effects,1.0605355702633987,0.069371950384613,0.069371950384613
+schema:open,open action,Action schema,1.0605355702633987,0.069371950384613,0.069371950384613
+delta:target_treated,target treated,Verified effects,0.8914296018462035,0.03434719792059745,0.03434719792059745
+schema:use,use action,Action schema,0.9397645671504842,0.058103723237798756,0.058103723237798756
+lex:observation_jaccard,observation overlap,Search/history,-2.5693802982191745,-0.15752283143384405,0.2865172585494961
+candidate:matches_goal,goal match,Goal/entity alignment,0.09352634190827532,0.022040706023186748,0.03109164233689081
+delta:treated,treatment effect,Verified effects,1.0443153645573806,0.040237957594952835,0.040237957594952835

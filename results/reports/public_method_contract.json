@@ -1,0 +1,51 @@
+{
+  "schema_version": "public-method-contract-v1",
+  "method": "VCPS",
+  "score_equation": "actor_mean_logprob + 0.25 * (verifier_compiled_progress_potential + verifier_feedback_residual)",
+  "evaluation_protocol": {
+    "observable_admissible_actions": true,
+    "task_independent_recent_cycle_suppression": true,
+    "actor_proposal_top_k": 16,
+    "method_value_used_during_top_k_retrieval": false,
+    "full_action_continuation_score": true,
+    "maximum_episode_steps": 50
+  },
+  "paper_method_components": [
+    {
+      "name": "verifier_compiled_structured_progress_potential",
+      "source": "src/structured_progress.py",
+      "coefficient_config": "configs/structured_progress_scale_formula_d240.json",
+      "learned": false,
+      "runtime_factor_compilation": true,
+      "coefficient_table_public": true,
+      "coefficient_scope": "frozen_and_shared_across_all_tasks",
+      "runtime_factor_instantiation": "per_state_action_pair",
+      "valid_unseen134_successes": 94,
+      "valid_unseen134_reference_successes": 69
+    },
+    {
+      "name": "counterfactual_verifier_feedback_residual",
+      "source": "models/value_models/structured_progress_plus_entity_semantic_d240.json",
+      "learned": true,
+      "training_supervision": "verifier_feedback_only_train_split",
+      "train_pairs": 7309,
+      "episode_heldout_train_pairs": 1116,
+      "expert_next_actions_used": false,
+      "validation_labels_used": false,
+      "hidden_state_used": false,
+      "task_family_routes_used": false,
+      "valid_unseen134_successes_with_structured_potential": 124,
+      "valid_unseen134_structured_only_successes": 94
+    }
+  ],
+  "valid_unseen134": {
+    "successes": 124,
+    "episodes": 134,
+    "success_rate": 0.9253731343283582,
+    "invalid_actions": 0,
+    "contract_blocks": 0,
+    "run_sha256": "d7bb2a5c2931e3c03e1808fb488360e0deb8e56ef4b5b5c2e5be9d84b76cd242",
+    "value_model_sha256": "3967BA5A85CFA7B20C411EF41632E76F69DE733EA89B58EB5E8B0F029DCB4C95",
+    "actor_sha256": "28fe33aa23100618eeeb6b3f6136ac66d5fa79244d4e9a328aa78ec2c3f61f25"
+  }
+}

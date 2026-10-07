@@ -1,0 +1,56 @@
+{
+  "schema_version": "unified-progress-ranker-training-v2",
+  "train_source": "data/budgets/d240_r075_train.jsonl",
+  "holdout_source": "data/feedback/d240_holdout.jsonl",
+  "epochs": 50,
+  "lr": 0.08,
+  "l2": 0.0001,
+  "seed": 23,
+  "initialization": "zero",
+  "training_stages": 1,
+  "feature_prefix": null,
+  "exclude_prefixes": [],
+  "feature_count": 627,
+  "lexical_features": [
+    "lex:action_is_new_location",
+    "lex:action_is_visited_location",
+    "lex:goal_coverage",
+    "lex:goal_destination_action",
+    "lex:goal_jaccard",
+    "lex:goal_object_action",
+    "lex:goal_treatment_action",
+    "lex:history_action_repeat_count",
+    "lex:history_location_visit_count",
+    "lex:instruction_coverage",
+    "lex:instruction_jaccard",
+    "lex:observation_jaccard",
+    "lex:raw_goal_overlap",
+    "lex:raw_instruction_overlap",
+    "lex:raw_observation_overlap",
+    "lex:raw_recent_overlap",
+    "lex:recent_overlap"
+  ],
+  "train": {
+    "pairs": 5517,
+    "pair_accuracy": 0.9169838680442269,
+    "by_source": {
+      "verifier_feedback_only": {
+        "pairs": 5517,
+        "correct": 5059,
+        "accuracy": 0.9169838680442269
+      }
+    }
+  },
+  "holdout": {
+    "pairs": 1116,
+    "pair_accuracy": 0.9130824372759857,
+    "by_source": {
+      "verifier_feedback_only": {
+        "pairs": 1116,
+        "correct": 1019,
+        "accuracy": 0.9130824372759857
+      }
+    }
+  },
+  "supervision": "verifier_feedback_only_train_split"
+}

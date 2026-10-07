@@ -1,0 +1,74 @@
+{
+  "schema_version": "hybrid-hf-live-alfworld-episode-report-v1",
+  "manifest": "data/manifests/valid_unseen134.jsonl",
+  "episode_count": 134,
+  "success_count": 118,
+  "success_rate": 0.8805970149253731,
+  "step_count": 2479,
+  "average_steps": 18.5,
+  "invalid_action_count": 0,
+  "invalid_action_rate": 0.0,
+  "verifier_intervention_count": 2479,
+  "verifier_intervention_rate": 1.0,
+  "deprecated_interface_invocation_count": 0,
+  "deprecated_interface_invocation_rate": 0.0,
+  "contract_normalized_step_count": 0,
+  "interface_modes": {},
+  "execution_contract_step_count": 2479,
+  "execution_contract_block_count": 0,
+  "execution_contract_block_rate": 0.0,
+  "execution_contract_versions": {
+    "v1": 2479
+  },
+  "execution_contract_update_modes": {
+    "none": 2479
+  },
+  "execution_contract_violation_types": {},
+  "timeout_count": 16,
+  "timeout_rate": 0.11940298507462686,
+  "by_split": {
+    "valid_unseen": 134
+  },
+  "success_by_split": {
+    "valid_unseen": {
+      "success": 118,
+      "total": 134
+    }
+  },
+  "by_family": {
+    "look_at_obj_in_light": 18,
+    "pick_and_place_simple": 24,
+    "pick_clean_then_place_in_recep": 31,
+    "pick_cool_then_place_in_recep": 21,
+    "pick_heat_then_place_in_recep": 23,
+    "pick_two_obj_and_place": 17
+  },
+  "success_by_family": {
+    "look_at_obj_in_light": {
+      "success": 17,
+      "total": 18
+    },
+    "pick_and_place_simple": {
+      "success": 20,
+      "total": 24
+    },
+    "pick_clean_then_place_in_recep": {
+      "success": 26,
+      "total": 31
+    },
+    "pick_cool_then_place_in_recep": {
+      "success": 20,
+      "total": 21
+    },
+    "pick_heat_then_place_in_recep": {
+      "success": 23,
+      "total": 23
+    },
+    "pick_two_obj_and_place": {
+      "success": 12,
+      "total": 17
+    }
+  },
+  "total_runtime_sec": 7737.1096,
+  "output": "results/episodes/d240_budget_r025.jsonl"
+}

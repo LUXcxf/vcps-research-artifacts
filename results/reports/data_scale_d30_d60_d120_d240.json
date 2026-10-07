@@ -1,0 +1,46 @@
+{
+  "schema_version": "vcps-data-scale-summary-v2",
+  "evaluation": "ALFWorld valid-unseen134",
+  "protocol": {
+    "candidate_limit": 16,
+    "max_steps": 50,
+    "checkpoint_rule": "Released optimizer-step64 adapters; development selection recorded per scale",
+    "invalid_action_count_each_scale": 0,
+    "scope": "scale-adapted expert and verifier-feedback training with shared valid-unseen134 evaluation"
+  },
+  "results": [
+    {
+      "scale": "D30",
+      "actor_success_count": 58,
+      "actor_success_rate": 0.4328358209,
+      "vcps_success_count": 97,
+      "vcps_success_rate": 0.723880597,
+      "vcps_average_steps": 26.03731343283582
+    },
+    {
+      "scale": "D60",
+      "actor_success_count": 72,
+      "actor_success_rate": 0.5373134328,
+      "vcps_success_count": 103,
+      "vcps_success_rate": 0.7686567164,
+      "vcps_average_steps": 24.567164179104477
+    },
+    {
+      "scale": "D120",
+      "actor_success_count": 71,
+      "actor_success_rate": 0.5298507463,
+      "vcps_success_count": 109,
+      "vcps_success_rate": 0.8134328358,
+      "vcps_average_steps": 22.91044776119403
+    },
+    {
+      "scale": "D240",
+      "actor_success_count": 69,
+      "actor_success_rate": 0.5149253731,
+      "vcps_success_count": 124,
+      "vcps_success_rate": 0.9253731343,
+      "vcps_average_steps": 16.746268656716417
+    }
+  ],
+  "training_configuration": "configs/data_scales.json"
+}

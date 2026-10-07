@@ -1,0 +1,12 @@
+{
+  "schema_version": "unified-progress-value-runtime-v1",
+  "supervision_source": "verifier_feedback_only_d60_train_split",
+  "entity_ranker": "ranker.json",
+  "base_weight": 0.0,
+  "residual_weight": 1.0,
+  "runtime_recovery_weight": 0.0,
+  "search_prior_weight": 0.0,
+  "tool_location_weight": 0.0,
+  "role_calibration_weight": 0.0,
+  "feature_view": "entity_delta_plus_learned_text_and_semantic_factors"
+}

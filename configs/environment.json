@@ -1,0 +1,23 @@
+{
+  "schema": "vcps-reproduction-environment-v1",
+  "ml_packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.10.1",
+    "peft": "0.19.1",
+    "accelerate": "1.13.0",
+    "bitsandbytes": "0.49.2",
+    "safetensors": "0.7.0"
+  },
+  "local_ml_profile": {"platform": "Windows", "python": "3.13.7"},
+  "aligned_scale_gpu_profile": {"platform": "Linux", "python_series": "3.12", "gpu": "NVIDIA A100", "cuda_runtime": "12.8"},
+  "alfworld_bridge_profile": {
+    "python": "3.10.12",
+    "textworld": "1.7.0",
+    "alfworld": "0.5.0",
+    "numpy": "2.2.6",
+    "PyYAML": "6.0.3",
+    "upstream_commit": "aaba6870f86c5be6a08a491f32a50b906227bc3e",
+    "benchmark_directory": "json_2.1.1"
+  },
+  "quantization": {"load_in_4bit": true, "type": "nf4", "double_quant": true, "compute_dtype": "bfloat16"}
+}

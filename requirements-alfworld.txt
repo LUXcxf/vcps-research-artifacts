@@ -1,0 +1,4 @@
+# Install the identified ALFWorld source revision in this separate environment.
+textworld==1.7.0
+numpy==2.2.6
+PyYAML==6.0.3

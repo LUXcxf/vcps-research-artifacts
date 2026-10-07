@@ -1,0 +1,81 @@
+{
+  "completed": true,
+  "selected": "tracked_one",
+  "screening": {
+    "tracked_one": {
+      "tasks": 24,
+      "unique_ordered_ids": true,
+      "success_count": 21,
+      "success_rate": 0.875,
+      "total_steps": 450,
+      "average_steps": 18.75,
+      "invalid_actions": 0,
+      "episodes_sha256": "10ccc571f16677f309ca1be37b56a970c969c2ccf89c7fe37bcf4f9ffa82ca13",
+      "report_sha256": "f435bfe11ed630454c1b01e3d57c951440e6ec1a016ad078d7699fdf5da6b431",
+      "provenance_sha256": "83217f6686677e9d3acac1838965f29477d27e33a86bbc63e3e5c0b34fb22a03"
+    },
+    "tracked_two": {
+      "tasks": 24,
+      "unique_ordered_ids": true,
+      "success_count": 15,
+      "success_rate": 0.625,
+      "total_steps": 613,
+      "average_steps": 25.541666666666668,
+      "invalid_actions": 0,
+      "episodes_sha256": "b2f4fff28b10318051a8c091f521e1cf6df01fb5eaf593c48d4558c51bb56abf",
+      "report_sha256": "6d7df3ce36714abdc4738ec6175ceff80637f4f2757ad69ea75ed65ad7c559bf",
+      "provenance_sha256": "b498cdd001c8237f253502272deb62e7f7254ec8f275c643f7efb6d1e1b4df3e"
+    },
+    "generated_two": {
+      "tasks": 24,
+      "unique_ordered_ids": true,
+      "success_count": 17,
+      "success_rate": 0.7083333333333334,
+      "total_steps": 552,
+      "average_steps": 23.0,
+      "invalid_actions": 0,
+      "episodes_sha256": "3db8cd49d2a893a15c97da7eaf09161f860da74e3a5441b2737a78dede475f13",
+      "report_sha256": "22435c5584126aff1eee72747fe5458fe177b7d79297adbbd9a71e54ec523534",
+      "provenance_sha256": "99f8c357576e8b80ab4a37d43e3ba45baad66c8d97c0a4718e2dfa503ee5de6d"
+    }
+  },
+  "development": {
+    "tracked_one": {
+      "tasks": 70,
+      "unique_ordered_ids": true,
+      "success_count": 50,
+      "success_rate": 0.7142857142857143,
+      "total_steps": 1510,
+      "average_steps": 21.571428571428573,
+      "invalid_actions": 0,
+      "episodes_sha256": "de80c2067cb29b2fa08f9108af0a46d901d3ff917d3c2eddb534d490f9495a4d",
+      "report_sha256": "eea3a51d8bca58e2a6705e1168194a7702960f8ee68498f5b831c85a008eef9b",
+      "provenance_sha256": "e9214eaf023477f64892f4cf85bde24e27d8e2e7844a68adcad7746de9eacf53"
+    },
+    "generated_two": {
+      "tasks": 70,
+      "unique_ordered_ids": true,
+      "success_count": 42,
+      "success_rate": 0.6,
+      "total_steps": 1902,
+      "average_steps": 27.17142857142857,
+      "invalid_actions": 0,
+      "episodes_sha256": "467886ae1f9b8b47dabb8b84ac1174d3aad09658f8eab5d772721de953b55326",
+      "report_sha256": "a84b8ff5c96c12340ab8e0816c21e02737a19a67823ce8de995158db92208c9e",
+      "provenance_sha256": "2b3e6efeeb3237fe30a7744f30be2421509b20fada9614cd16701523583208e3"
+    }
+  },
+  "test": {
+    "tasks": 134,
+    "unique_ordered_ids": true,
+    "success_count": 91,
+    "success_rate": 0.6791044776119403,
+    "total_steps": 3322,
+    "average_steps": 24.791044776119403,
+    "invalid_actions": 0,
+    "episodes_sha256": "cea468097fe805543abd5d70403b6ae89de56c54b7a784a6b89165e11c06d05e",
+    "report_sha256": "c7b917421252724933ce9d4bd4ac63746334b2df3de92d1090765b827e8d811c",
+    "provenance_sha256": "698465d85d231b7e10e2ea13e61987622bed72b20a415d872b4a7f93349dcdb2"
+  },
+  "implementation_scope": "StateAct-style legal-candidate adaptation on frozen D240 Actor"
+}
